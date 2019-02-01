@@ -9,7 +9,9 @@ const inquirer = require('inquirer');
         message: "Please choose from an option below: ",
         choices: [
           "Add new contact",
+          "Date",
           "Exit"
+
         ]
       }
     ];
@@ -23,6 +25,9 @@ const inquirer = require('inquirer');
        switch(response.mainMenuChoice){
          case "Add new contact":
            this.addContact();
+           break;
+         case "Date":
+           this.getDate();
            break;
          case "Exit":
            this.exit();
@@ -49,5 +54,11 @@ const inquirer = require('inquirer');
  exit(){
    console.log('Thanks for using AddressBloc!');
    process.exit();
+ }
+
+ getDate(){
+   var d = new Date
+   var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+   console.log(months[d.getMonth()] + "/" + d.getDate() + "/" + d.getFullYear())
  }
 }
