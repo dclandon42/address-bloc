@@ -65,4 +65,8 @@ getContactCount(){
    var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
    console.log(months[d.getMonth()] + "/" + d.getDate() + "/" + d.getFullYear())
  }
+
+ remindMe(){
+   return "Learning is a life-long pursuit";
+ }
 }
