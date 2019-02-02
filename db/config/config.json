@@ -1,0 +1,18 @@
+{
+  "development": {
+    "username": "DylanLandon",
+    "password": null,
+    "database": "address-bloc-dev",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "logging": false
+  },
+  "test": {
+    "username": "DylanLandon",
+    "password": null,
+    "database": "address-bloc-test",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "logging": false
+  }
+}
